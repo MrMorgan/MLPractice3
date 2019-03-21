@@ -20,7 +20,7 @@ def printIndex(sample):
     plt.show()
 
 data_set_sizes = [125, 625, 1250, 6250, 12500, 25000]
-svm_model = svm.SVC(gamma='scale', decision_function_shape = 'ovo')
+svm_model = svm.SVC(kernel='poly', decision_function_shape = 'ovo')
 tree_model = tree.DecisionTreeClassifier()
 lr_model = linear_model.LogisticRegression()
 svm_scores = []
